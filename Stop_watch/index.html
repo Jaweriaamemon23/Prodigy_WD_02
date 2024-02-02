@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="time">
+        <div class="circle" style="--clr:#ff2972;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="hours" class="hours">00</div>
+        </div>
+        <div class="circle" style="--clr:#fee800;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minutes" class="minutes">00</div>
+        </div>
+        <div class="circle" style="--clr:#0ffc43;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="seconds" class="seconds">00</div>
+        </div>
+
+        <div id="ampm" class="ampm">am</div>
+
+    </div>
+
+    <div id="controls">
+        <button id="startBtn">Start</button>
+        <button id="lapBtn">Lap</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+        <button id="displayBtn">Display</button>
+        
+    </div>
+
+    <div id="displayContent" class="hidden">
+        <ul id="laps"></ul>
+    </div>
+</body>
+</html>
